@@ -5,9 +5,15 @@ public abstract class Ticket {
 
     String ticketName;
 
-    Ticket(String ticketName) {
-        this.ticketName = ticketName;
+    String pnr;
+
+
+    Ticket(String pnr) {
+        this.pnr = pnr;
     }
 
-    abstract void printPNR();
+    public abstract void printPNR();
+    public abstract void printTicketDetails();
+
+
 }
